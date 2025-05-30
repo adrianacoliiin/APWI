@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
+
+# Compiled output
+dist/
+build/
+*.tsbuildinfo
+
+# TypeScript cache
+*.tsbuildinfo
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sw?
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Docker volumes (MongoDB data)
+src/data/mongo1/
+src/data/mongo2/
+src/data/mongo3/
+
+
+# Debug
+*.local
