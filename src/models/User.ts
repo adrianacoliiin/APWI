@@ -10,7 +10,7 @@ export interface IUser extends Document {
     status: boolean;
     createDate: Date;
     deleteDate: Date;
-    rol: string;
+    rol: string[];
     firstName: string;
     lastName: string;
 }
@@ -44,9 +44,9 @@ const userSchema = new Schema<IUser>({
         default: null,
     },
     rol: {
-        type: String,
-        enum: ['admin', 'user'],
-        default: 'user',
+        type: [{ type: String }],
+        default: ['user'],
+        required: true,
     },
     firstName: {
         type: String,
